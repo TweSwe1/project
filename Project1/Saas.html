@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SaaS Kit</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src = "script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+</head>
+<body>
+	<div class="main_container">
+		<div class="container closed">
+			
+			<div class="menu_wrapper">
+				<div class="menu_wrapper_relative">
+					<div class="logo_wrapper">
+						<p class="logo">
+							SaaS <span class="kit_logo">Kit</span> 
+						</p>
+					</div>
+
+					<div class="profile_wrapper">
+						<div class="profile_content_wrapper">
+							<div class="user_ico_wrapper">
+								<img src="img/user.png">
+							</div>
+							<div class="profile_text_wrapper">
+								<p class="text_one">Ilya Skrynnikov</p>
+								<p class="text_two">wwwis2001@gmail.com</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu_links_wrapper">
+						<ul class="navigation">
+							<li><p class="active_link"><i class="fas fa-chart-line"></i></p><span class="active_link">Dashboard</span></li>
+							<li class="menu_tasks_link" onclick="subMenu()"><p><i class="fas fa-tasks"></i></p><span>Tasks</span>
+								<ul class="sub_menu_tasks">
+									<li><div style="border: 2px solid #FFB946;" class="sub_circle"></div><h1 class="sub_menu_all_links">Active</h1></li>
+									<li><div style="border: 2px solid #2ED47A;" class="sub_circle"></div><h1 class="sub_menu_all_links">Comleted</h1></li>
+									<li><div style="border: 2px solid #F7685B;" class="sub_circle"></div><h1 class="sub_menu_all_links">Ended</h1></li>
+								</ul>
+							</li>
+							<li><p><i class="far fa-envelope"></i></p><span>Email</span></li>
+							<li><p><i class="far fa-user"></i></p><span>Contacts</span></li>
+							<li><p><i class="far fa-comment"></i></p><span>Chat</span></li>
+							<li><p><i class="fas fa-box"></i></p><span>Deals</span></li>
+						</ul>
+					</div>
+
+					<div class="setting_wrapper">
+						<ul class="setting_content">
+							<li><p><i class="fas fa-ellipsis-h"></i></p><span>Setting</span></li>
+						</ul>
+					</div>
+
+
+
+					<div class="close_ico" onclick="closeMenu()">
+						<i class="fas fa-bars"></i>
+					</div>
+					<p class="close_text">
+						Toggle sidebar
+					</p>
+
+				</div>
+			</div>
+
+
+			<div class="content_wrapper">
+				<div class="content_wrapper_relative">
+					<div class="search_bar_wrapper">
+						<div class="search_ico_wrapper">
+							<i class="fas fa-search"></i>
+						</div>
+						<input type="text" class="search_input" placeholder="Global search">
+
+						<div class="bell_ico_wrapper">
+							<div class="bell_relative">
+								<div class="red_point">
+									
+								</div>
+								<i class="far fa-bell"></i>
+							</div>						
+						</div>
+
+					</div>
+
+					<div class="content_inner">
+						<div class="tasks_wrapper">
+							<div class="tasks_card">
+
+								<div class="completed_tasks_wrapper">
+									<div class="completed_tasks_first_inner">
+										
+										<p class="tasks_txt">8 task completed out of 10</p>
+
+										<p class="show_txt">
+											Show: <span style="color: #109CF1;">This week</span><i class="fas fa-caret-down"></i>  
+										</p>
+										
+										<div class="progress_bar">
+											<div class="load_bar">
+												
+											</div>
+										</div>
+										<p class="date_txt">
+											23 December, Sunday
+										</p>
+
+									</div>
+									<div class="completed_tasks_second_inner">
+										<div class="data_wrapper">
+											<div class="data_card">
+												<p class="day">
+													Sun
+												</p>
+												<p class="number" style="background: #109CF1; color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+													23
+												</p>
+											</div>
+
+											<div class="data_card">
+												<p class="day" style="color: #109CF1; opacity: 1;">
+													Mon
+												</p>
+												<p class="number" style="color: #109CF1;">
+													24
+												</p>
+											</div>
+
+											<div class="data_card">
+												<p class="day">
+													Tue
+												</p>
+												<p class="number">
+													25
+												</p>
+											</div>
+											<div class="data_card">
+												<p class="day">
+													Wed
+												</p>
+												<p class="number">
+													26
+												</p>
+											</div>
+											<div class="data_card">
+												<p class="day">
+													Thu
+												</p>
+												<p class="number">
+													27
+												</p>
+											</div>
+											<div class="data_card">
+												<p class="day">
+													Fri
+												</p>
+												<p class="number">
+													28
+												</p>
+											</div>
+											<div class="data_card">
+												<p class="day">
+													Sat
+												</p>
+												<p class="number">
+													29
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="messages_wrapper">
+									<div class="message_inner">
+										<div class="message_content">
+											<p class="task_h">
+												Reminder
+											</p>
+
+											<p class="task_main_h">
+												Send benefit review by Sunday
+											</p>
+											<p class="task_Date">
+												Due date: <span>December 23, 2018</span>
+											</p>
+
+											<div class="user_tasks_wrapper">
+												<div class="user_ico_tasks">
+													<img src="img/user.png">
+												</div>
+												<p class="name_tasks">Rabeka Moor</p>
+											</div>
+
+											<a class="complete_btn">Completed</a>
+
+										</div>
+									</div>
+
+									<div class="message_inner">
+										<div class="message_content">
+											<p class="task_h">
+												Call
+											</p>
+
+											<p class="task_main_h">
+												Invite to office meet-up
+											</p>
+
+											<p class="task_Date">
+												Due date: <span>December 23, 2018</span>
+											</p>
+
+											<div class="user_tasks_wrapper">
+												<div class="user_ico_tasks">
+													<img src="img/user.png">
+												</div>
+												<p class="name_tasks">George Fields</p>
+											</div>
+
+											<div class="ended_block_wrapper">
+												<div class="circle_yellow"></div>
+												<div class="circle_green"></div>
+												<i class="fas fa-pencil-alt"></i>
+												<i class="fas fa-trash"></i>
+												<a class="ended_btn">Ended</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="message_inner">
+										<div class="message_content">
+											<p class="task_h">
+												Event
+											</p>
+
+											<p class="task_main_h">
+												Office meet-up
+											</p>
+
+											<p class="task_Date">
+												Due date: <span>December 23, 2018</span>
+											</p>
+
+											<div class="user_tasks_wrapper">
+												<div class="user_ico_tasks">
+													<img src="img/user.png">
+												</div>
+												<p class="name_tasks">Diana Huminska</p>
+											</div>
+
+											<a class="complete_btn">Completed</a>
+
+										</div>
+									</div>
+
+									<p class="show_more_txt">
+										Show more
+									</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="second_column">
+							<div class="dealsCard_wrapper">
+								<div class="dealsCard">
+									<div class="deals_header">
+										<p class="deals_p">
+											Deals
+										</p>
+										<p class="delas_show_text">Show: <span>Monthly</span><i style="cursor: pointer;" class="fas fa-caret-down"></i></p>
+									</div>
+
+									<div class="chart_wrapper">
+										<div class="lagend_wrapper">
+											<div class="legend_circle"></div><p>Closed deals</p>
+										</div>
+										<div class="chart_inner">
+											<canvas id="speedChart"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tasksCard_wrapper">
+								<div class="tasksCard">
+									<div class="card_tree_header">
+										<p class="tree_card_title">Tasks</p>
+										<p class="delas_show_text">Show: <span>This month</span><i style="cursor: pointer;" class="fas fa-caret-down"></i></p>
+									</div>
+
+									<div class="donat_chart_wrapper">
+										<div class="donut_chart_legend_wrapper">
+											<div class="legent_donut_circuit" style="border: 2px solid #F7685B;">
+											</div>
+											<p class="labels_donut_chart">Ended</p>
+											<div class="legent_donut_circuit" style="border: 2px solid #FFB946;">
+											</div>
+											<p class="labels_donut_chart">Completed</p>
+											<div class="legent_donut_circuit" style="border: 2px solid #2ED47A;">
+											</div>
+											<p class="labels_donut_chart">Active</p>
+
+										</div>
+										<canvas id="myChart"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>	
+			
+			</div>
+
+		</div>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+
+
+var config = {
+  type: 'doughnut',
+  data: {
+    labels: [
+      "Active",
+      "Completed",
+      "Ended"
+    ],
+    datasets: [{
+      data: [300, 50, 100],
+      backgroundColor: [
+        "#2ED47A",
+        "#FFB946",
+        "#F7685B"
+      ],
+      hoverBackgroundColor: [
+        "#2ED47A",
+        "#FFB946",
+        "#F7685B"
+      ]
+    }]
+  },
+  options: {
+  	cutout: 110,
+  	responsive: true,
+    maintainAspectRatio: false,
+    plugins:{
+  		legend:{
+  			display: false
+  		}, 
+  		labels:{
+  			defaultFontFamily: 'Arial'
+  		}
+  	},
+    elements: {
+      center: {
+        text: 'Red is 2/3 of the total numbers',
+        color: '#FF6384', // Default is #000000
+        fontStyle: 'Poppins', // Default is Arial
+        sidePadding: 20, // Default is 20 (as a percentage)
+        minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
+        lineHeight: 25 // Default is 25 (in px), used for when text wraps
+      }
+    }
+  }
+};
+
+var ctx = document.getElementById("myChart").getContext("2d");
+var myChart = new Chart(ctx, config);
+
+</script>
+
+
+
+<script type="text/javascript">
+var speedCanvas = document.getElementById("speedChart");
+
+
+var speedData = {
+  labels: ['1 Dec', "8 Dec", "16 Dec", "31 Dec"],
+  datasets: [{
+    label: "Closed deals",
+    data: [0, 50, 25, 150],
+    borderColor: 'rgb(16, 156, 241)',
+    backgroundColor:'rgba(16, 156, 241, 0.2)'
+  }]
+};
+
+var chartOptions = {
+	tension: 0.4,
+	responsive: true,
+    maintainAspectRatio: false,
+  	fill: true,
+
+  	plugins:{
+  		legend:{
+  			display: false
+  		}, 
+  		labels:{
+  			defaultFontFamily: 'Arial'
+  		}
+  	},
+  legend: {
+  	display: false,
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black',
+     
+    }
+  },
+
+
+};
+
+var lineChart = new Chart(speedCanvas, {
+  type: 'line',
+  data: speedData,
+  options: chartOptions
+});
+</script>
+</html>

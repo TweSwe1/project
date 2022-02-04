@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter:wght@200;400;900&family=Rubik&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #F5F5F7;
+}
+.main_section
+{
+	width: 100%;
+	background: #F5F5F7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 12px;
+}
+
+.content_wrapper
+{
+	display: flex;
+	justify-content: space-between;
+	width: 1440px;
+	
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 32px;
+	padding-right: 80px;
+}
+.logo_wrapper
+{
+	margin-bottom: 90px;
+}
+.menu_wrapper
+{
+	padding-top: 46px;
+	padding-left: 43px;
+	padding-right: 43px;
+	padding-bottom: 41px;
+	background: #000;
+	border-radius: 24px;
+	margin-right: 72px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.btn_wrapper
+{
+	display: flex;
+}
+.navigation
+{
+	list-style: none;
+	color: #fff;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.navigation li i
+{
+	transition: 1s;
+}
+.navigation li:hover i
+{
+	opacity: 0.8;
+}
+.navigation li:hover .link_info
+{
+	right: -120px;
+	z-index: 1;
+	visibility: visible;
+	opacity: 1;
+}
+.link_info
+{
+	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: -12px;
+	right: -150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 50px;
+	background: #fff;
+	border-radius: 12px;
+	cursor: default;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	transition: 0.5s;
+
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000000;
+}
+.navigation li
+{
+	position: relative;
+	margin-bottom: 64px;
+	cursor: pointer;
+	transition: 1s;
+}
+.navigation li:last-child
+{
+	margin-bottom: 225px;
+}
+.logout_btn
+{
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+.content_inner_wrapper
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.hello_wrapper
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 57px;
+	color: #000000;
+}
+
+.hello_wrapper
+{
+	padding-top: 46px;
+	padding-left: 32px;
+	padding-bottom: 41px;
+	padding-right: 403.5px;
+	background: #F5F5F7;
+	border-radius: 14px;
+	position: relative;
+	margin-bottom: 24px;
+
+}
+.hello_text	
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+}
+.hello_decoration
+{
+	position: absolute;
+	right: 104px;
+	bottom: 0px;
+}
+.content_inner_one
+{
+	padding-top: 25px;
+	margin-right: 64px;
+}
+.learn_wrapper
+{
+	display: flex;
+	align-items: center;
+}
+.learn_inner
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #F5F5F7;
+	padding-top: 8px;
+	padding-left: 9px;
+	padding-bottom: 8px;
+	padding-right: 24px;
+	border-radius: 14px;
+	width: 100%;
+}
+.flag_wrapper
+{
+	width: 64px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	border-radius: 12px;
+}
+
+.left_btn
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	margin-left: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.right_btn
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	margin-left: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+}
+.text_learn_wrapper
+{
+	margin-left: 24px;
+	margin-right: 52px;
+}
+.text_learn_wrapper h3
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000000;
+    display: flex;
+}
+
+.text_learn_wrapper p
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+}
+.decor_procent
+{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 25px;
+	height: 25px;
+	background: #F5F5F7;
+	z-index: 0;
+
+}
+.procent_wrapper p
+{
+	z-index: 1;
+}
+.procent_wrapper
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+	position: relative;
+	border: 3px solid #000;
+}
+
+.lear_btn
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 40px;
+	background: #000000;
+	border-radius: 8px;
+	color: #FFF;
+	margin-left: 47px;
+	cursor: pointer;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	
+	color: #FFFFFF;
+
+}
+
+.swiper_wrapper
+{
+	max-width: 510px;
+	width: 100%;
+	height: 80px;
+}
+
+.swiper 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+
+.courses_title
+{
+	width: 100%;
+	max-width: 620px;
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 16px;
+}
+
+.courses_title h2 
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 38px;
+	color: #000000;
+}
+.courses_navigation_tab_wrapper
+{
+	width: 100%;
+	max-width: 620px;
+	margin-bottom: 12px;
+}
+
+.tab_navigation
+{
+	list-style: none;
+	display: flex;
+}
+.tab_link.active
+{
+	opacity: 1;
+}
+.tab_link
+{
+	margin-right: 32px;
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000000;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.tab_content.active.animation .tab_card
+{
+	transform: translateX(0px);
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.tab_card
+{
+	opacity: 0;
+	visibility: hidden;
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #F5F5F7;
+	border-radius: 14px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 9px;
+	padding-right: 24px;
+	transform: translateX(-200px);
+	transition: 0.5s;
+	transition-delay: calc(0.2s * var(--i));
+}
+
+.tab_card_img_wrapper
+{
+	width: 64px;
+	height: 64px;
+	background: #fff;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tab_card_text_wrapper
+{
+	max-width: 155px;
+	width: 100%;
+}
+.time_wrapper
+{
+	max-width: 90px;
+	width: 100%;
+}
+.tab_card_text_wrapper h3
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000000;
+}
+.tab_card_text_wrapper p
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+}
+
+.time_wrapper
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+}
+.time_wrapper p
+{
+	margin-left: 8px;
+}
+.rate_wrapper
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+}
+
+.rate_wrapper p
+{
+	margin-left: 8px;
+}
+.courses_btn
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #000;
+	border-radius: 8px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	width: 120px;
+	height: 40px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.tab_content.active
+{
+	display: block;
+}
+
+.tab_content
+{
+
+	max-height: 400px;
+	height: 100%;
+	overflow-y: scroll;
+	display: none;
+}
+
+.tab_content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tab_content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.profile_wrapper
+{
+	display: flex;
+	align-items: center;
+}
+
+
+.search_wrapper
+{
+	position: relative;
+	margin-right: 35px;
+}
+
+.search_wrapper input
+{
+	width: 260px;
+	height: 40px;
+	outline: none;
+	background: #F5F5F7;
+	border-radius: 8px;
+	border: none;
+	padding-left: 40px;
+
+	font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+.search_wrapper .fas.fa-search
+{
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.avatar_wrapper
+{
+	display: flex;
+	align-items: center;
+}
+.bell_wrapper
+{
+	position: relative;
+	font-size: 24px;
+	margin-right: 24px;
+	cursor: pointer;
+}
+
+.bell_message
+{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #F45B5B;
+	top: 0;
+	right: -3px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 8px;
+}
+.avatar_wrapper div
+{
+	display: flex;
+	align-items: center;
+}
+
+.ico_img
+{
+	margin-right: 9px;
+}
+
+.complete_one_card
+{
+	padding: 17px 37px;
+	background: #F5F5F7;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+}
+.complete_one_card h2
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 102px;
+	color: #000000;
+	margin-right: 12px;
+}
+.complete_wrapper
+{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.complete_one_card p
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	max-width: 76px;
+	width: 100%;
+}
+
+.chart_wrapper
+{
+	margin-top: 40px;
+	margin-bottom: 24px;
+}
+
+.chart_title
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 38px;
+	color: #000000;
+	margin-bottom: 16px;
+}
+
+.chart_links
+{
+	display: flex;
+	list-style: none;
+}
+
+.chart_link.active
+{
+	opacity: 1;
+}
+.chart_link
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000000;
+	opacity: 0.3;
+	margin-right: 24px;
+	cursor: pointer;
+}
+
+.chart_inner
+{
+	width: 100%;
+	max-width: 450px;
+	height: 266px;
+	
+}
+
+.chart_tab_wrapper
+{
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tab_btn
+{
+	display: flex;
+	align-items: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+	padding: 9px 16px;
+	background: #F5F5F7;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.tab_btn img
+{
+	margin-left: 6px;
+}
+
+
+
+.learn_wrapper_two h2
+{
+	font-family: "Baloo Bhai 2";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 38px;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.learn_wrapper_two p
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	max-width: 179px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.learn_btn
+{
+	width: 120px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	color: #FFFFFF;
+	background: #000000;
+	border-radius: 8px;
+}
+.learn_wrapper_two img
+{
+	position: absolute;
+	right: 48px;
+	bottom: 30px;
+}
+.learn_wrapper_two
+{
+	padding-top: 24px;
+	padding-right: 48px;
+	padding-left: 24px;
+	padding-bottom: 15px;
+	background: #F5F5F7;
+	border-radius: 14px;
+	position: relative;
+}
